@@ -1,0 +1,745 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--&lt;!&ndash;<h1>Hii {{name, lname}}...</h1> &ndash;&gt;-->
+<!--&lt;!&ndash;todo: ('Gaurav', 'soRTE') &ndash;&gt;-->
+
+<!--<h3> Hii {{name1}} <h1>{{lname1}}</h1></h3>-->
+<!--<ol>-->
+<!--    {% for std in students %}-->
+<!--    <li>{{std.id}} , {{std.name}}</li>-->
+<!--    {% endfor %}-->
+<!--</ol>-->
+<!--&lt;!&ndash;todo: Hii Gaurav soRTE&ndash;&gt;-->
+<!--<img src="{{url_for('static', filename='nebula.jpg')}}">-->
+<!--<a href="/gaurav">To Gaurav</a>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/font-awesome.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
+  </head>
+  <body>
+    <!-- background circles start -->
+    <div class="bg-circles">
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+      <div class="circle-3"></div>
+      <div class="circle-4"></div>
+    </div>
+    <!-- background circles ends -->
+
+    <div class="overlay"></div>
+    <!-- ============================== Main Start ============================== -->
+    <div class="main">
+      <!-- header Start -->
+      <header class="header">
+        <div class="container">
+          <div class="row flex-end">
+            <button type="submit" class="nav-toggler">
+              <span></span>
+            </button>
+            <nav class="nav">
+              <div class="nav-inner">
+                <ul>
+                  <li><a href="#home" class="nav-item link-item">Home</a></li>
+                  <li><a href="#about" class="nav-item link-item">About</a></li>
+                  <li>
+                    <a href="#portfolio" class="nav-item link-item">
+                      Portfolio
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#contact" class="nav-item link-item">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- header End -->
+
+      <section class="home-section align-item-center active" id="home">
+        <div class="container">
+          <div class="row align-item-center">
+            <div class="home-text">
+              <p>Hello I'm</p>
+              <h1>Gaurav Sorte</h1>
+              <h2>Full Stack Developer & Data Analyst</h2>
+              <a href="#about" class="btn link-item">more about me</a>
+              <a href="#portfolio" class="btn link-item">portfolio</a>
+            </div>
+            <div class="home-img">
+              <div class="img-box">
+                <img src="{{url_for('static', filename='img/bg.jpg')}}" alt="profile-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =================== Home Section End =================== -->
+
+      <!-- =================== About Section Start =================== -->
+      <section class="about-section sec-padding" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h2>about me</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="about-img">
+              <div class="img-box">
+                <img src="{{url_for('static', filename='img/porfolio_img_2.png')}}" alt="about img" />
+              </div>
+            </div>
+            <div class="about-text">
+              <p>
+               Persuing Under Graduation in Information Technology. I like to
+               play Guitar and Badminton and I would like to pursue my career in
+               Analytics and Data Science. I am always energetic and eager to learn new skills.
+              </p>
+              <h3>Skills</h3>
+              <div class="skills">
+                <div class="skill-item">Html</div>
+                <div class="skill-item">CSS</div>
+                <div class="skill-item">Bootstrap</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">Java</div>
+                <div class="skill-item">Flask</div>
+                <div class="skill-item">Django</div>
+                <div class="skill-item">SQL</div>
+                <div class="skill-item">MongoDB</div>
+                <div class="skill-item">Excel</div>
+                <div class="skill-item">Tableau</div>
+                <div class="skill-item">PowerBi</div>
+                <div class="skill-item">NodeJS</div>
+                <div class="skill-item">ReactJs</div>
+              </div>
+              <div class="about-tabs">
+                <button
+                  type="button"
+                  class="tab-item active"
+                  data-target="#education"
+                >
+                  Education
+                </button>
+                <button
+                  type="button"
+                  class="tab-item"
+                  data-target="#experience"
+                >
+                  Experience
+                </button>
+              </div>
+
+              <!-- Education Section -->
+              <div class="tab-content active" id="education">
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <span class="date">2015 - 2016</span>
+                    <h4>
+                      10th -
+                      <span>School Of Scholars, Wardha</span>
+                    </h4>
+                    <p>
+                      I have played in CBSE Westzone Badminton Competition, and I was always
+                      active and participated in every School Programs such as Annual Gathering,
+                      School camps, Competitions.
+                    </p>
+                  </div>
+
+                  <div class="timeline-item">
+                    <span class="date">2016 - 2018</span>
+                    <h4>
+                      10 + 2 -
+                      <span>Aghnotri College, Wardha</span>
+                    </h4>
+                    <p>
+                      During my 11th n 12th I was playing Badminton regularly.
+                    </p>
+                  </div>
+
+                  <div class="timeline-item">
+                    <span class="date">2018 - 2022</span>
+                    <h4>
+                      BE -
+                      <span>
+                        D.Y.Patil College Of Engineering, Akurdi, Pune
+                      </span>
+                    </h4>
+                    <p>
+                      I have participated in Annual Programs and Also participated in
+                      Smart India Hackthon. I played Inter-College Badminton Matches.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Education Section Ends -->
+
+              <!-- Experience Section Start -->
+              <div class="tab-content" id="experience">
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <span class="date">November, 2020 - January, 2021</span>
+                    <h4>
+                      Internship -
+                      <span>Analyst.Ai</span>
+                    </h4>
+                    <p>
+                      During Internship I worked on Java, Spring and Hibernate Frameworks.
+                      I worked on Documentation and also created Pros and Cons Functions.
+                    </p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Experience Section End -->
+
+              <a
+                href="{{url_for('static', filename='GauravSorte_InternshalaResume-2.pdf')}}"
+                target="_blank"
+                class="btn"
+              >
+                download CV
+              </a>
+              <a href="#contact" class="btn link-item">Contact me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =================== About Section End =================== -->
+
+      <!-- =================== Porfolio Section Start =================== -->
+
+      <section class="portfolio-section sec-padding" id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h2>recent work</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Portfolio Item Start -->
+            <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img
+                  src="{{url_for('static', filename='img/blog_website.png')}}"
+                  alt="portfolio image thumb"
+                  srcset=""
+                />
+              </div>
+              <h3 class="portfolio-item-title">Blog website</h3>
+              <button type="button" class="btn view-project-btn">
+                view project
+              </button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>
+                    Created a blog website using Flask as backend and SQL as Database.
+                    Some of the Features are :-<br>
+                    - Admin can Add/Delete the posts<br>
+                    - Admin can edit the posts<br>
+                    - Pagination<br>
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>
+                      Created -
+                      <span>15 June 2020</span>
+                    </li>
+                    <li>
+                      Technologies Used -
+                      <span>Html, CSS, Bootstrap, Javascript, Python, Flask, SQL</span>
+                    </li>
+                    <li>
+                      Role -
+                      <span>Backend Developer</span>
+                    </li>
+                    <li>
+                      Github Link -
+                      <span>
+                        <a href="#" target="_blank">
+                          https://github.com/gauravsorte/blog_website_
+                        </a>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio Item Ends -->
+
+            <!-- Portfolio Item Start -->
+            <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img
+                  src="{{url_for('static', filename='img/hobbies_site.PNG')}}"
+                  alt="portfolio image thumb"
+                  srcset=""
+                />
+              </div>
+              <h3 class="portfolio-item-title">Hobbies Website</h3>
+              <button type="button" class="btn view-project-btn">
+                view project
+              </button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>
+                    A Hobbies website where one can share their Hobbies, can Meet Persons with
+                    same Hobbies. This was our 3rd Year mini Project. We have used PHP for
+                    backend and SQL database.<br>
+                    Some of the Features are :- <br>
+                    - Design Consistency.<br>
+                    - One can post Photos or Videos.<br>
+                    - One can comment on the posts.<br>
+                    - Manage his/her posts.<br>
+                    - Upload/Update his/her Profile Picture.<br>
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>
+                      Created -
+                      <span>29 October 2020</span>
+                    </li>
+                    <li>
+                      Technologies Used -
+                      <span>Html, CSS, Bootstrap, Javascript, Php, SQL</span>
+                    </li>
+                    <li>
+                      Role -
+                      <span>Frontend Developer</span>
+                    </li>
+                    <li>
+                      Github Link -
+                      <span>
+                        <a href="#" target="_blank">
+                          https://github.com/gauravsorte/hobbie_website/tree/master/Hobbies
+                        </a>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio Item Ends -->
+
+            <!-- Portfolio Item Start -->
+            <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img
+                  src="{{url_for('static', filename='img/music_player.PNG')}}"
+                  alt="portfolio image thumb"
+                  srcset=""
+                />
+              </div>
+              <h3 class="portfolio-item-title">Music Player</h3>
+              <button type="button" class="btn view-project-btn">
+                view project
+              </button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>
+                    A music player created usig tkinter. I have used Pygame and mutagen
+                    for adding functionalities.<br>
+                    Some of the features are :-<br>
+                    - Add one or more songs to playlist.<br>
+                    - remove one or more songs from playlist.<br>
+                    - seek foward or backward track.<br>
+                    - Current position and time of song and total song time .<br>
+                    - Change track(next/previous).<br>
+                    - Change Volume.<br>
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>
+                      Created -
+                      <span>15 June 2020</span>
+                    </li>
+                    <li>
+                      Technologies Used -
+                      <span>Tkinter</span>
+                    </li>
+                    <li>
+                      Role -
+                      <span>GUI Developer</span>
+                    </li>
+                    <li>
+                      Github Link -
+                      <span>
+                        <a href="#" target="_blank">
+                          https://github.com/gauravsorte/music_player
+                        </a>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio Item Ends -->
+
+
+            <!-- Portfolio Item Start -->
+            <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img
+                  src="{{url_for('static', filename='img/comaprative_analysis_dashboard.png')}}"
+                  alt="portfolio image thumb"
+                  srcset=""
+                />
+              </div>
+              <h3 class="portfolio-item-title">Comparative Analysis Dashboard</h3>
+              <button type="button" class="btn view-project-btn">
+                view project
+              </button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>
+                    A Comparative Analysis Dashboard of a company having Different Products
+                    in Different Catagories such as Cat1, Cat2, Cat3, Cat4 and compared Product
+                    wise and Catagories wise comparision of Current Year sales and Previous
+                    Year Sales.<br>
+                    Analysis Output :-<br>
+                    - Comapny has Current Year Sales Growth of <b>47.15%</b> over Previous Year Sales.<br>
+                    - The target of 491.06M is not achived this year which 488.01M i.e Less
+                      by <b>0.61%</b>.<br>
+                    - Category 4 has the highest share and Category 2 has lowest share in Current
+                      year sales.<br>
+                    - Category 4 and Category 3 sales has Increased by <b>46.64%</b> and <b>46.07% </b>
+                      respectively over the Previous Year but has not achived the Budgeted Sales by <b>-1.56% </b>and
+                      <b>-1.28% </b>respectively.<br>
+                    - Category 2 and Category 1 sales has Increased by <b>45.77%</b> and <b>49.06%</b>
+                      respectively over the Previous Year and also achived the Budgeted Sales by <b>0.01%</b> and
+                      <b>0.59% </b>respectively.<br>
+                    - In the Month of May and October, Sales have not achived the Budgeted Sales
+                      target.
+
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>
+                      Created -
+                      <span>19 October 2020</span>
+                    </li>
+                    <li>
+                      Technologies Used -
+                      <span>PowerBi</span>
+                    </li>
+                    <li>
+                      Role -
+                      <span>Analyst</span>
+                    </li>
+                    <li>
+                      Github Link -
+                      <span>
+                        <a href="#" target="_blank">
+                          https://github.com/gauravsorte/Comparative_Analysis_Dashboard
+                        </a>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio Item Ends -->
+
+
+            <!-- Portfolio Item Start -->
+            <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img
+                  src="{{url_for('static', filename='img/overall_performance_summary.png')}}"
+                  alt="portfolio image thumb"
+                  srcset=""
+                />
+              </div>
+              <h3 class="portfolio-item-title">Overall Performance Summary Dashboard</h3>
+              <button type="button" class="btn view-project-btn">
+                view project
+              </button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>
+                    It is a Overall Performance Summary of a Company having different Segments.
+                    This Analysis shows if the Target Revenue is achived or not Month by month and
+                    also by each Segment. The data was available till Janauary 2021 and from
+                    Feburary to June is the prediction.<br>
+                    Analysis Output :- <br>
+                    - Only the Month March 2021 will not be able to achived the targeted
+                      revenue by<b>-5.02%</b> .<br>
+                    - December 2020 has achived highest targeted revenue by <b>13.32%</b>.<br>
+                    - The Public Sector has not achived targeted revenue by <b>-49.66%</b>.<br>
+                    - SMC Education has Achived the highest targeted revenue by <b>1359.23%</b>.<br>
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>
+                      Created -
+                      <span>17 October 2020</span>
+                    </li>
+                    <li>
+                      Technologies Used -
+                      <span>PowerBi</span>
+                    </li>
+                    <li>
+                      Role -
+                      <span>Analyst</span>
+                    </li>
+                    <li>
+                      Github Link -
+                      <span>
+                        <a href="#" target="_blank">
+                          https://github.com/gauravsorte/Overall_Performance_Summary
+                        </a>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio Item Ends -->
+
+             <!-- Portfolio Item Start -->
+             <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img
+                  src="{{url_for('static', filename='img/todo_list.png')}}"
+                  alt="portfolio image thumb"
+                  srcset=""
+                />
+              </div>
+              <h3 class="portfolio-item-title">Todo List Website</h3>
+              <button type="button" class="btn view-project-btn">
+                view project
+              </button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>
+                    Created a Todo List where one can set deadline of the task n priority of
+                    that task. I have used Local Storage to store the tasks.<br>
+                    Features :-<br>
+                    - Set Deadline of the Tasks.<br>
+                    - Set Priority of Tasks and accordingly color of the task changes,
+                      Red-High Priority, Green-Medium Priority, Blue-Low Priority.<br>
+                    - Added Animations during the tasks shows up.<br>
+                    - Shows the days remaining.<br>
+                    - Edit or Delete the tasks.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>
+                      Created -
+                      <span>7 March 2021</span>
+                    </li>
+                    <li>
+                      Technologies Used -
+                      <span>Html, CSS, Bootstrap, JavaScript</span>
+                    </li>
+                    <li>
+                      Role -
+                      <span>Frontend Developer</span>
+                    </li>
+                    <li>
+                      Github Link -
+                      <span>
+                        <a href="#" target="_blank">
+                          https://github.com/gauravsorte/todo_list
+                        </a>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio Item Ends -->
+
+            <!-- Portfolio Item Start -->
+            <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img
+                  src="{{url_for('static', filename='img/library_management.PNG')}}"
+                  alt="portfolio image thumb"
+                  srcset=""
+                />
+              </div>
+              <h3 class="portfolio-item-title">Library Management System</h3>
+              <button type="button" class="btn view-project-btn">
+                view project
+              </button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>
+                    A Library Management System created using Tkinter and SQL database.<br>
+                    Fearures :- <br>
+                    - Add/delete Books.<br>
+                    - See all the books avalilable.<br>
+                    - Issue the books.<br>
+                    - Return the books.<br>
+                    - See all the issued books.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>
+                      Created -
+                      <span>15 June 2020</span>
+                    </li>
+                    <li>
+                      Technologies Used -
+                      <span>Tkinter, SQL</span>
+                    </li>
+                    <li>
+                      Role -
+                      <span>GUI Developer</span>
+                    </li>
+                    <li>
+                      Github Link -
+                      <span>
+                        <a href="#" target="_blank">
+                          https://github.com/gauravsorte/library_management
+                        </a>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio Item Ends -->
+
+
+
+
+
+          </div>
+        </div>
+      </section>
+      <!-- =================== Porfolio Section Ends =================== -->
+
+      <!-- =================== Contact Section Start =================== -->
+      <section class="contact-section sec-padding" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h2>contact me</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="contact-form">
+              <form>
+                <div class="row">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      class="input-control"
+                      required
+                    />
+                  </div>
+
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      placeholder="Email"
+                      class="input-control"
+                      required
+                    />
+                  </div>
+
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      placeholder="Subject"
+                      class="input-control"
+                      required
+                    />
+                  </div>
+
+                  <div class="input-group">
+                    <textarea
+                      placeholder="Message"
+                      class="input-control"
+                    ></textarea>
+                  </div>
+
+                  <div class="submit-btn">
+                    <button type="submit" class="btn">send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <h3>email</h3>
+                <p>gaurav26sorte@gmail.com</p>
+              </div>
+
+              <div class="contact-info-item">
+                <h3>Phone No</h3>
+                <p>+91-8484896132</p>
+              </div>
+
+              <div class="contact-info-item">
+                <h3>Follow me</h3>
+                <div class="social-links">
+                  <a href="https://www.facebook.com/gaurav.sorte.90" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.instagram.com/gaurav_sorte_/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/gaurav-sorte-740b491a6?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BHaji%2FQsrTTy9NauGhuXSeA%3D%3D" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="https://github.com/gauravsorte" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =================== Contact Section Ends =================== -->
+    </div>
+
+    <!-- ----- Portfolio Item Details Popup Start ----- -->
+    <div class="portfolio-popup">
+      <div class="pp-inner">
+        <div class="pp-content">
+          <div class="pp-header">
+            <button type="submit" class="btn pp-close">
+              <i class="fas fa-times"></i>
+            </button>
+            <div class="pp-thumbnail">
+              <img src="img/portfolio/3.jpg" alt="pp thumbnail" srcset="" />
+            </div>
+            <h3></h3>
+          </div>
+
+          <div class="pp-body"></div>
+        </div>
+      </div>
+    </div>
+    <!-- ----- Portfolio Item Details Popup End ----- -->
+
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+  </body>
+</html>
